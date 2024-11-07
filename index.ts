@@ -69,7 +69,7 @@ setInterval(() => {
     console.log("pinging client");
     client.write("event: ping\ndata: ping\n\n");
   });
-}, 60e3);
+}, 30e3);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
